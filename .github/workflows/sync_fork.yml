@@ -5,7 +5,7 @@ permissions:
 
 on:
     schedule:
-         - cron: "0 0 */3 * *"  # 每3天午夜执行
+         - cron: "0 20 */3 * *"  # 每3天的 UTC 20:00，对应北京时间次日 04:00
     workflow_dispatch:  # 允许手动触发
 
 jobs:
